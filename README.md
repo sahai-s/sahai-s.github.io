@@ -1,2 +1,585 @@
 # sahai-s.github.io
-Math website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shubhankar Sahai</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <style type="text/css">
+    body {
+      font-size: 15px;
+    }
+
+    a { color: #ac1f0c; text-decoration: none; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    ul li { margin-bottom: 10px; }
+
+    #header {
+      margin-left: 1%;
+      margin-top: 1%;
+    }
+
+    #info {
+      width: 70%;
+      margin-right: 1%;
+      margin-left: 1%;
+    }
+
+    #pic {
+      width: 37%;
+      margin-left: 1%;
+      margin-right: 12%;
+      float: right;
+      position: relative;
+      top: -1em;
+    }
+
+    #pic img {
+      float: right;
+      width: 400px;
+      height: auto;
+    }
+
+    #pic figcaption {
+      clear: both;
+      width: 400px;
+      margin-left: auto;
+      padding-top: 12px;
+      text-align: center;
+    }
+
+
+
+    @media (max-width: 767px) {
+      #header {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 0%;
+        margin-bottom: 2%;
+      }
+      #info {
+        width: 100%;
+        margin-right: 0%;
+        margin-left: 0%;
+      }
+      #pic {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        float: none;
+        position: static;
+        top: 0;
+      }
+
+      #pic img {
+        float: none;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #pic figcaption {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+      }
+    }
+
+    /* --- papers --- */
+    #papers { padding-left: 0; }
+    #papers li {
+      list-style: none;
+      margin: 0 0 16px 0;
+      padding: 10px 12px;
+      border-left: 3px solid #ddd;
+    }
+
+    .paper-head{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+      align-items: baseline;
+    }
+
+    .paper-title{
+      font-weight: 600;
+    }
+
+    .paper-links a{
+      font-size: 0.95em;
+      white-space: nowrap;
+    }
+
+    .paper-status{
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .paper-authors{
+      font-size: 0.95em;
+      color: #444;
+      margin-top: 4px;
+    }
+
+    .paper-notes{
+      margin-top: 6px;
+      color: #444;
+      font-size: 0.95em;
+      line-height: 1.35;
+    }
+
+    .paper-notes summary{
+      cursor: pointer;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .paper-notes summary::-webkit-details-marker { display: none; }
+    .paper-notes summary:before { content: "▸ "; }
+    .paper-notes[open] summary:before { content: "▾ "; }
+
+    .paper-notes .note{
+      margin-top: 6px;
+    }
+
+    .watermark{
+      margin-top: 24px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="header">
+    <h1>Shubhankar Sahai</h1>
+  </div>
+ <div id="pic">
+  <img src="Kandinsky_Isolated_Sounds.jpg"
+       alt="Kandinsky">
+
+  <figcaption>
+    <i>Isolated sounds</i>, Wassily Kandinsky, 1927
+  </figcaption>
+</div>
+  <div id="info">
+<p>
+  <b>Email</b>:
+  <span id="gmail-email">
+    shubhankar (dot) sahai (dot) 72 (at) gmail (dot) com
+  </span>
+  <br>
+<b>Institutional email</b>:
+  <span id="ucsd-email">ssahai (at) ucsd (dot) edu</span> 
+
+  <br>
+
+
+  <script>
+    const ucsdUser = "iahass".split("").reverse().join("");
+    const ucsdDomain = "ude.dscu".split("").reverse().join("");
+
+    const gmailUser =
+      "27.iahas.raknahbuhs".split("").reverse().join("");
+    const gmailDomain = "moc.liamg".split("").reverse().join("");
+
+    document.getElementById("ucsd-email").textContent =
+      ucsdUser + "@" + ucsdDomain;
+
+    document.getElementById("gmail-email").textContent =
+      gmailUser + "@" + gmailDomain;
+  </script>
+
+  <b>Office</b>: HSS 3073
+</p>
+    <p>
+      I am a graduate student in the math department at
+      <a href="https://math.ucsd.edu/index.php/">UCSD</a>.
+    </p>
+
+    <p>
+      I work in arithmetic and algebraic geometry. More specifically, my current work is in the
+      intersection of derived algebraic geometry, <i>p</i>-adic Hodge theory and algebraic
+      <i>K</i>-theory. 
+
+
+      <!--
+I also have some orthogonal ongoing work in the duality theory of
+      Grothendieck differential operators (in the smooth proper case).
+
+      --!>
+
+    </p>
+
+    <p>
+      My advisor is <a href="https://kskedlaya.org/">Kiran Kedlaya</a>.
+    </p>
+ <hr>
+ <h3>Seminars</h3>
+    <p>
+     In Spring 2026, we had a seminar on <a href="alterations.html">alterations</a>.
+    </p>
+
+   
+<!--<hr>
+
+    <p>
+      My <a href="Shubhankar_Sahai_CV.pdf">CV</a>.
+    </p>
+
+
+    <p>
+      My Research Statement is available on request.
+    </p>
+<hr>--!>
+    <hr>
+
+    <h3>Research</h3>
+    <p>
+      I am broadly interested in (derived) algebraic and arithmetic geometry. I have recently been interested in (geometric) representation theory.
+
+<!--My current work is aimed
+      towards setting up some theory in order to study the coefficients for syntomic cohomology
+      of Frobenius liftable schemes. In particular, in the list below, the titles which either
+      have variants of the words 'prismatic' or 'syntomic', are all aimed towards this program.
+      The papers titled 'differential operators...' are orthogonal to the above and are aimed at
+      setting up a duality theory for Grothendieck differential operators. Perhaps the common
+      underlying theme is 'de Rham cohomology'.
+--!>
+    </p>
+
+    <h4>Preprints</h4>
+
+    <ul id="papers">
+      <li>
+        <div class="paper-head">
+          <span class="paper-title">
+            <a href="https://arxiv.org/abs/2409.14322">Duality of differential operators and algebraic de Rham cohomology</a>
+          </span>
+          <span class="paper-links">
+            <a href="https://arxiv.org/abs/2409.14322">arXiv</a>
+          </span>
+          <span class="paper-status">&mdash; Preprint</span>
+        </div>
+
+        <div class="paper-authors">
+          with <a href="https://www.math.columbia.edu/~calebji/">Caleb Ji</a>,
+          <a href="https://casimirkothari.github.io/">Casimir Kothari</a>,
+                    <a href="https://sites.google.com/view/oliver-li/">Oliver Li</a>,
+          <a href="https://sites.google.com/view/murmuno/">Sveta Makarova</a> and
+          <a href="https://sites.google.com/view/sridhar-venkatesh">Sridhar Venkatesh</a>.
+        </div>
+
+ <details class="paper-notes">
+          <summary>Notes</summary>
+          
+          <div class="note">
+            This paper gives another proof of relative Poincaré duality in algebraic de Rham cohomology for smooth proper families X--->S, by generalising Serre duality to complexes over X where the differentials are finite order S-linear differential operators. The latter manoeuvre  allows us to treat the relative de Rham complex as if it was a complex of O_X-modules. Then, via an examination of the Hodge-de Rham spectral sequence, one obtains a new proof of Poincaré duality. The lift of Serre duality to differential operators is obtained by combining recent ideas of Clausen on co-evaluation maps for de Rham cohomology along with more concrete constructions (due to de Jong). An obvious generalisation of this result is in progress with Caleb Ji, but is currently on hiatus.
+          </div>
+        </details>
+      
+
+
+
+      </li>
+
+      <li>
+        <div class="paper-head">
+          <span class="paper-title">
+            <a href="https://arxiv.org/abs/2512.19348">De Rham affineness of the Nygaard filtered prismatization in positive characteristic</a>
+          </span>
+          <span class="paper-links">
+            <a href="https://arxiv.org/abs/2512.19348">arXiv</a> · <a href="de_rham_affine.pdf">PDF</a>
+          </span>
+          <span class="paper-status">&mdash; Submitted</span>
+        </div>
+
+        <details class="paper-notes">
+          <summary>Notes</summary>
+          <div class="note">
+            The PDF version has a more readable layout. Comments very welcome!
+          </div>
+          <div class="note">
+            The key idea in this paper is that the Nygaard filtered prismatization of an animated ring in positive characteristic is determined by its
+            Nygaard filtered prismatic cohomology, functorially in the ring. The idea is not new and is already in the second
+            paper of Bhatt-Lurie for unfiltered prismatization, but the observation that this is an intrinsic property of the
+            functors in question (and not just the associated derived stacks) is. We name this property <i>de Rham affineness</i>.
+            This concept will be useful in my future papers. Note that positive characteristic is not necessary and the same proof works <i>mutatis        mutandis</i> relative to a perfectoid. It is also true relative to a bounded prism, provided one works with relative prismatic cohomology, but that's the subject of future work.
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <div class="paper-head">
+          <span class="paper-title">
+            <a href="https://arxiv.org/abs/2602.08942">Derived algebras on formal stacks and prismatic gauges</a>
+          </span>
+          <span class="paper-links">
+            <a href="https://arxiv.org/abs/2602.08942">arXiv</a> · <a href="dalg_formal.pdf">PDF</a>
+          </span>
+          <span class="paper-status">&mdash; Preprint</span>
+        </div>
+
+        <details class="paper-notes">
+          <summary>Notes</summary>
+        <!--  <div class="note">
+            The PDF version has corrected some obvious typos. I will update the arxiv version soon. Comments very welcome!
+          </div>--!>
+          <div class="note">
+            A paper studying the theory of derived algebras (in the sense of Bhatt-Mathew and Raksit) in quasi-coherent sheaves
+            on non-trivially formal derived stacks. The main goal is to develop a good working theory and prove classification
+            theorems for derived algebras in prismatic gauges. Along the way we prove some basic theorems in (non-connective) formal derived geometry which seem  to be
+            missing from the literature.
+          </div>
+        </details>
+      </li>
+
+      <!--
+      <li>
+        <div class="paper-head">
+          <span class="paper-title">The relative Nygaard filtered prismatization</span>
+          <span class="paper-status">&mdash; Draft available on request</span>
+        </div>
+
+        <details class="paper-notes">
+          <summary>Notes</summary>
+          <div class="note">
+            We study the stack parametrising the relative Nygaard filtered prismatization. The aim is to explain that the
+            relative Nygaard filtered prismatic cohomology arises (in sufficiently nice cases) as the coherent cohomology of a
+            stack. This is again needed for my paper on the syntomification of Frobenius liftable schemes.
+          </div>
+        </details>
+      </li>
+
+
+      <li>
+        <div class="paper-head">
+          <span class="paper-title">Relative Poincaré duality for differential complexes</span>
+          <span class="paper-status">&mdash; Currently on hiatus</span>
+        </div>
+
+        <div class="paper-authors">
+          Joint with <a href="https://www.math.columbia.edu/~calebji/">Caleb Ji</a>.
+        </div>
+
+        <details class="paper-notes">
+          <summary>Notes</summary>
+          <div class="note">
+            Generalises our previous joint work to the case of bounded differential complexes i.e. complexes of locally free
+            sheaves whose differentials are finite order linear differential operators over the base and for coefficients.
+          </div>
+        </details>
+      </li>
+      --!>
+    <h4>In preparation</h4>
+
+
+      <li>
+        <div class="paper-head">
+          <span class="paper-title">Tannakian reconstruction in derived algebraic geometry</span>
+          <span class="paper-status">&mdash; In preparation</span>
+        </div>
+
+        <div class="paper-authors">
+          Joint with <a href="https://joshuamundinger.github.io/">Joshua Mundinger</a>.
+        </div>
+
+        <details class="paper-notes">
+          <summary>Notes</summary>
+          <div class="note">
+            In the early 2010s, Lurie, Bhatt and Bhatt--Halpern-Leistner (building on a 'relative' perspective introduced by Lurie a decade earlier) proved strong reconstruction             results for maps of <i>spectral</i> stacks from (certain) symmetric monoidal functors between their derived categories of quasi-coherent sheaves. Motivated by recent work in <i>p</i>-adic Hodge theory and Hochschild homology, one asks whether such reconstruction results exist in <i>derived</i> geometry, where the basic geometric objects are spectra of <i>animated</i> (i.e. simplicial commutative) rings rather than E_\infty-rings. In this paper, we answer this question by using some recent ideas of Nuiten-Toën.
+          </div>
+        </details>
+      </li>
+
+
+      <li>
+        <div class="paper-head">
+          <span class="paper-title">Prismatic <i>F</i>-gauges and Frobenius liftable schemes</span>
+          <span class="paper-status">&mdash; In preparation</span>
+        </div>
+
+        <details class="paper-notes">
+          <summary>Notes</summary>
+          <div class="note">
+        This paper gives a description of prismatic <i>F</i>-gauges on Frobenius liftable schemes in terms of big Fontaine-Laffaille modules. The main conceptual insight is that the Nygaard filtered prismatization of such a scheme is pulled back from the Hodge-filtered de Rham stack of its lift. Along the way we study a notion of p^n-de Rham stacks which deform prismatic cohomology to <b>Z</b>/p^n+1-schemes, with the case n=1 being relevant to our study.
+          </div>
+        </details>
+      </li>
+    </ul>
+
+    <hr>
+
+  
+
+   
+
+    <h3>Teaching</h3>
+
+    <h4>UCSD</h4>
+    I have been a TA for the following courses
+    <ul>
+      <li> Math 20C&mdash;Calculus and Analytic Geometry for Science and Engineering: Summer I 2026 </li>
+
+      <li> Math 184&mdash;Enumerative combinatorics: Spring 2026 </li>
+      <li> Math 154&mdash;Discrete mathematics and graph theory: Winter 2026</li>
+      <li> Math 187A&mdash;Introduction to Cryptography: Winter 2023, Spring 2023, Winter 2024, Spring 2024, Fall 2024, Spring 2025, Fall 2025</li>
+      <li> Math 109&mdash;Introduction to Mathematical Reasoning: Winter 2025</li>
+      <li> Math 20D&mdash;Introduction to Differential Equations: Fall 2022</li>
+      <li> Math 20E&mdash;Vector Calculus: Fall 2021, Winter 2022, Spring 2022</li>
+    </ul>
+
+    <hr>
+
+    <h3>Some notes</h3>
+
+    <p>
+      Notes that I wrote at some point during my education. Please use with caution and note that there is no claim of originality.
+      Please let me know of errors.
+    </p>
+
+    <ul>
+      <li>
+        <a href="Serre-Tate.pdf">Notes on Drinfeld's proof of Serre-Tate</a>:
+        Notes explaining Drinfeld's proof of the Serre-Tate theorem on how to control deformations of abelian schemes via their
+        <i>p</i>-divisible group (or, more conceptually, why the obvious map from the moduli of abelian varieties to the stack of
+        Barsotti-Tate groups is formally étale). Essentially taken without much modification from Katz's paper. Written for a seminar
+        on Katz-Mazur.
+      </li>
+
+      <li>
+        <a href="Algebraicity of Coh.pdf">The stack of coherent sheaves</a>:
+        Informal notes filling in the details of Laumon and Moret-Bailly's proof of the algebraicity of the stack of coherent sheaves.
+        Might be useful to beginners. Note that the mysterious references to Illusie refer to his notes on formal geometry.
+      </li>
+
+      <li>
+        <a href="Flat descent for the cotangent complex.pdf">Flat descent for the cotangent complex</a>:
+        A somewhat relaxed exposition of the flat descent result of Bhatt. Written for a seminar on BMS II. Note that an analogous
+        argument works <i>mutatis mutandis</i> in the animated setting. I will update the notes in the future.
+      </li>
+
+      <li>
+        <a href="Crystals in fibered categories.pdf">Crystals in fibered categories</a>:
+        A slightly terse explanation of how to view crystals as cartesian sections of a certain fibered category over the category of
+        schemes. Written a long time ago.
+      </li>
+
+      <li>
+        <a href="ZFT descent.pdf">An informal introduction to descent</a>:
+        Slides introducing a general math audience to the ideas of descent theory. Written as an advertisement for a more advanced
+        seminar on algebraic stacks which ran soon after.
+      </li>
+<!--<hr>
+      <li>
+        <a href="Commutative algebra for AG.pdf">A commutative algebra primer</a>:
+        Some basic commutative algebra for algebraic geometry. Written for a seminar on Riemann-Roch for undergraduates.
+      </li>
+<hr>--!>
+    </ul>
+
+ 
+
+    <h3>Miscellaneous</h3>
+
+    <h4>Service</h4>
+    <ul>
+      <li>
+        I served as the <a href="https://sites.google.com/ucsd.edu/mgsc/">MGSC</a> Mentorship Chair for the academic year 2024-2025.
+      </li>
+      <li>
+        I have been a mentor for the DRP program at UCSD twice. The topics covered included local class field theory in the first
+        iteration and some advanced commutative algebra in the second, including
+        <a href="https://arxiv.org/abs/math/0604046">Huneke-Lyubeznik's proof</a> of the existence of big Cohen-Macaulay algebras in
+        positive characteristic.
+      </li>
+    </ul>
+
+<h4>Discord server</h4>
+
+There is a discord server for UCSD students (graduate and undergraduate!) and post-docs interested in arithmetic geometry and related topics. Please email me (or any other arithmetic geometry/number theory graduate student) if you are UCSD affiliated and want to join.
+
+    <h4>Undergrad research</h4>
+    <ul>
+      <li>
+        <a href="https://arxiv.org/abs/1811.10687">Composition Tableaux basis for Schur functors and the Plücker algebra</a>:
+        Gives a representation theoretic interpretation of certain combinatorial objects called Row-Strict Composition Tableaux (RSCT)
+        and variants. This has been pending revision, after referee-review, since 2021. I am hopeful that this can be carried out in
+        finite time.
+      </li>
+    </ul>
+
+    <h4>Some resources</h4>
+
+    <p>Here are some resources which have been personally useful to me but may not be well known.</p>
+
+    <ul>
+      <li>
+        <a href="faisceaux pervers.pdf">Faisceaux pervers aka BBDG</a>.
+        A copy of the 2018 re-edition of BBDG's tome 'Faisceaux pervers'. Uploaded here so that one doesn't have to struggle with the
+        unique scanned copy on Deligne's webpage. Note that you can download your own copy off the
+        <a href="https://smf.emath.fr/publications/faisceaux-pervers">SMF website</a> for free, provided you have institutional access.
+      </li>
+
+      <li>
+        <a href="On_the_cohomology_of_commutative_rings.pdf">On the (co-)homology of commutative rings</a> and
+        <a href="on_the_homology_of_commutative_rings.pdf">Homology of commutative rings</a>.
+        Quillen's manuscripts introducing the cotangent complex.
+      </li>
+
+      <li>
+        <a href="Logarithmic_geometry_illusie.pdf">Logarithmic spaces (According to K. Kato)</a>.
+        Illusie's succinct but hard to find survey on log geometry.
+      </li>
+
+      <li>
+        <a href="https://drive.google.com/drive/folders/1_xAG8QWmeMdiKnWg3P4WQ0cYEAxVMevX?usp=sharing">Deformation theory MSRI</a>.
+        Videos for the 2007 MSRI (now SLMath) workshop on deformation theory. They can, unfortunately, not be found on the SLMath
+        website anymore.
+      </li>
+
+      <li>
+        <a href="https://drive.google.com/drive/folders/1lgPaHDVTCJxZK0MoTEAohp13TMiC0V5S">The de Rham-Witt complex (after Bhatt-Lurie-Mathew)</a>.
+        Illusie's lectures at the Chennai Mathematical Institute on the new approach to de Rham-Witt complexes.
+      </li>
+
+<li> <a href=https://www.youtube.com/@bungseminar/videos>BunG Seminar's YouTube channel</a>. BunG Seminar, at UChicago. 
+</li> 
+
+<li> <a href=https://www.claymath.org/online-resources/quillen-notebooks/>Quillen Notebooks</a>.
+</li> 
+<!--<hr>
+<li> <a href=https://www.youtube.com/@akhilmathew2824>Akhil Mathew's YouTube channel</a>. This is a link to A. Mathew's YouTube channel which features videos for talks at UChicago. 
+</li> 
+
+<li> The <a href=https://math.uchicago.edu/~drinfeld/Seminar-2019/Winter/>winter</a> and <a href=https://math.uchicago.edu/~drinfeld/Seminar-2019/Spring/>spring</a> notes from Drinfeld's 2019 seminars on prismatization.     
+</li>
+<li> <a href=https://sites.google.com/site/geometriclanglands2014/video-and-notes-for-the-talks?authuser=0>2014 Geometric Langlands workshop</a>. Notes and videos from the 2014 workshop on the geometric Langlands conjecture, introducing the basic objects of the field.
+</li>
+<li> <a href=https://bogdanzavyalov.com/Seminar_analytic_K_theory.html>Analytic <i>K</i>-theory</a>. Notes from the learning seminar on analytic <i>K</i>-theory. Princeton, 2024. 
+</li>
+<li> Réédition de <a href=https://webusers.imj-prg.fr/~patrick.polo/SGA3/>SGA 3 </a> et <a href=http://fabrice.orgogozo.perso.math.cnrs.fr/SGA4/index.html>SGA 4 </a>. 
+</li>
+
+<li> <a href=https://mathscinet.ams.org/mathscinet/publications-search>Mathscinet</a>. 
+</li>
+
+<hr>--!>
+
+
+    </ul>
+
+    <div class="watermark">Last edited: July 2026</div>
+
+  </div>
+
+</body>
+</html>
