@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alterations</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <style type="text/css">
+    body {
+      font-size: 15px;
+    }
+
+    a { color: #ac1f0c; text-decoration: none; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    ul li { margin-bottom: 10px; }
+
+    #header {
+      margin-left: 1%;
+      margin-top: 1%;
+    }
+
+    #info {
+      width: 70%;
+      margin-right: 1%;
+      margin-left: 1%;
+    }
+
+    #pic {
+      width: 37%;
+      margin-left: 1%;
+      margin-right: 12%;
+      float: right;
+      position: relative;
+      top: -1em;
+    }
+
+    @media (max-width: 767px) {
+      #header {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 0%;
+        margin-bottom: 2%;
+      }
+      #info {
+        width: 100%;
+        margin-right: 0%;
+        margin-left: 0%;
+      }
+      #pic {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0%;
+        margin-bottom: 2%;
+        float: none;
+        position: static;
+        top: 0;
+      }
+    }
+
+    #papers { padding-left: 0; }
+    #papers li {
+      list-style: none;
+      margin: 0 0 16px 0;
+      padding: 10px 12px;
+      border-left: 3px solid #ddd;
+    }
+
+    .paper-head{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+      align-items: baseline;
+    }
+
+    .paper-title{
+      font-weight: 600;
+    }
+
+    .paper-links a{
+      font-size: 0.95em;
+      white-space: nowrap;
+    }
+
+    .paper-status{
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .paper-authors{
+      font-size: 0.95em;
+      color: #444;
+      margin-top: 4px;
+    }
+
+    .paper-notes{
+      margin-top: 6px;
+      color: #444;
+      font-size: 0.95em;
+      line-height: 1.35;
+    }
+
+    .paper-notes summary{
+      cursor: pointer;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .paper-notes summary::-webkit-details-marker { display: none; }
+    .paper-notes summary:before { content: "▸ "; }
+    .paper-notes[open] summary:before { content: "▾ "; }
+
+    .paper-notes .note{
+      margin-top: 6px;
+    }
+
+    .watermark{
+      margin-top: 24px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="header">
+    <h1>Seminar on Alterations</h1>
+  </div>
+
+  <div id="info">
+
+    <p>
+      In Spring 2026, <a href="https://math.ucsd.edu/people/profiles/ramanujan-srihari">Ramanujan Srihari</a> and I are organising a learning seminar on  <a href="https://www.numdam.org/item/PMIHES_1996__83__51_0.pdf">alterations</a>. Please email <a href="https://mathweb.ucsd.edu/~ssahai/">me</a> or Ramanujan to be added to the mailing list.
+    </p>
+
+
+<b>Location</b>: Thursdays 2-3:30 pm,  APM B412 
+
+
+<h3>Goal</h3>
+
+The goal of this seminar is to understand the proof of Theorem 4.1 in de Jong's paper [dJ1] (see the references for abbreviations). We will follow the notes [CFL]. 
+Time remaining, we will move onto modern applications and refinements, depending on audience interest.
+
+<h3>Schedule</h3>
+
+    <ul>
+      <li>
+        April 2: Introduction, overview of the proof and basic reductions. Sections 1, 2 and 3 [CFL] (Shubhankar)
+      </li>
+ <li>
+        April 9: Constructing good curve fibrations. Sections 4 and 5  [CFL] (Ramanujan)
+      </li>
+<li>
+        April 16: Finding enough multisections of curve fibrations. Sections 6 and 7 [CFL] (Shubhankar)
+      </li>
+ <li>
+        April 23: Stable curves. Section 8 [CFL] (Shubhankar)
+      </li>
+
+<li>
+        April 30: Moduli of stable curves. Section 9 [CFL] (Gavin)
+      </li>
+<li>
+        May 7: Applications of moduli stacks. Section 10 [CFL] (Ramanujan)
+      </li>
+
+<li>
+        May 14: Semistable curves over discrete valuation rings. Section 11 [CFL] (Poornima)
+      </li>
+ <li>
+        May 21:  Resolving semistable curves over a regular base. Section 12 [CFL] (Dimitri)
+      </li>
+
+ <li>
+        May 28: Applications (Matt). Note that this talk will be at a different time which is tba. 
+      </li>
+
+ <li>
+        June 4: Finiteness of rigid cohomology via alterations (Kiran) 
+      </li>
+ 
+ 
+     
+    </ul>
+
+    <h3>Main reference for the seminar</h3>
+<ul>
+   <li>[CFL]
+        <a href="https://virtualmath1.stanford.edu/~conrad/249BW17Page/handouts/alterations-notes.pdf">Conrad, Feng and Landesman</a>
+      </li>
+</ul>
+    <h3>References</h3>
+
+<ul>
+
+<li>[Oort]
+        <a href="https://scispace.com/pdf/alterations-can-remove-singularities-5g13l68jkn.pdf">Alterations can remove singularities</a>
+     
+      </li>
+<li>[AO]
+        <a href="https://arxiv.org/abs/math/9806100">Alterations and resolution of singularities</a>
+     
+      </li>
+      <li>[dJ1]
+        <a href="https://www.numdam.org/item/PMIHES_1996__83__51_0.pdf">Smoothness, semi-stability and alterations</a>
+     
+      </li>
+
+      <li>[dJ2]
+        <a href="https://www.numdam.org/item/10.5802/aif.1575.pdf">Families of curves and alterations</a>
+      </li>
+
+ 
+ <li>[Geis]
+        <a href="https://www2.rikkyo.ac.jp/web/geisser/dejong.pdf">Applications of de Jong's theorem on alterations</a>
+      </li>
+
+
+    <li>[Stacks]
+        <a href="https://stacks.math.columbia.edu/">The Stacks project</a>
+      </li>
+
+
+    </ul>
+
+  <h3>Complementary references</h3>
+
+Here are some other references which may be useful to speakers.
+
+<ul>
+<li>
+<a href="https://link.springer.com/book/10.1007/978-3-642-51438-8">Néron models by Bosch, Lütkebohmert and Raynaud.</a>  Should be accessible via Springerlink.
+</li>
+<li>
+<a href="https://virtualmath1.stanford.edu/~conrad/249BW17Page/handouts.html">Handouts from B. Conrad's course on alterations.</a> 
+</li>
+<li>
+<a href="https://virtualmath1.stanford.edu/~conrad/mordellsem/">Notes from the Stanford seminar on the Mordell conjecture.</a>  The notes from the winter quarter on semistable reduction and Gabber's lemma are relevant.
+</li>
+
+
+
+<li>
+<a href="https://achinger.impan.pl/flat1.pdf">An overview of the Raynaud-Gruson flattening result written by P. Achinger.</a> 
+</li>
+
+
+</ul>
+
+
+<!--
+
+ <h3>Refinements and modern applications</h3>
+
+<ul>
+
+<li>[BS]
+        <a href="https://www.math.ias.edu/~bhatt/math/alterationsepsilon.pdf">Refined alterations</a>
+     
+      </li>
+<li>[Bei]
+        <a href="https://arxiv.org/abs/1102.1294"><I>p</I>-adic periods and derived de Rham cohomology</a>
+     
+      </li>
+      
+
+ <li>[Suh]
+        <a href="https://arxiv.org/abs/2410.01184">Symmetry and parity in Frobenius action on cohomology</a>
+      </li>
+ <li>[Stib]
+        <a href="https://arxiv.org/abs/1707.08611">Étale Covers and Local Algebraic Fundamental Groups</a>
+      </li>
+
+
+
+    </ul>
+
+
+--!>
+
+
+   
+
+  </div>
+
+</body>
+</html>
